@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Project1TwitterApp</servlet-name>
+		<servlet-class>com.fbtwitter.app.Project1TwitterAppServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Project1TwitterApp</servlet-name>
+		<url-pattern>/createTweet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CreateTweet</servlet-name>
+		<servlet-class>com.fbtwitter.app.CreateTweet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateTweet</servlet-name>
+		<url-pattern>/saveTweet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RetrieveTweet</servlet-name>
+		<servlet-class>com.fbtwitter.app.RetrieveTweets</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RetrieveTweet</servlet-name>
+		<url-pattern>/retrieveTweet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteTweet</servlet-name>
+		<servlet-class>com.fbtwitter.app.DeleteTweet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteTweet</servlet-name>
+		<url-pattern>/deleteTweet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FriendTweets</servlet-name>
+		<servlet-class>com.fbtwitter.app.FriendTweets</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FriendTweets</servlet-name>
+		<url-pattern>/friendTweets</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UpdateCounter</servlet-name>
+		<servlet-class>com.fbtwitter.app.UpdateCounter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateCounter</servlet-name>
+		<url-pattern>/updateCounter</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TopTweets</servlet-name>
+		<servlet-class>com.fbtwitter.app.TopTweets</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TopTweets</servlet-name>
+		<url-pattern>/topTweets</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
